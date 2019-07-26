@@ -20,6 +20,15 @@
       media="screen"
       href="css/bootstrap.min.css"
     />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="css/footer-distributed-with-address-and-phones.css"
+    />
+
+
+
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
     <!--google font style-->
     <link
@@ -97,7 +106,7 @@
                             <a href="#ourwork">Portfolio</a>
                           </li>
                           <li class="menuItem">
-                            <a href="#contact">Contact</a>
+                            <a href="#footer">Contact</a>
                           </li>
                         </ul>
                       </div>
@@ -583,67 +592,40 @@
       </section>
       <!--portfolio end-->
 
-      <section class="contactDetails">
-        <div class="container">
-          <div class="heading">
-            <h2>Drop me an email!</h2>
-            <h3>Please feel free if you would like to have a chat.</h3>
-          </div>
-          <!--contact form start-->
-          <div class="row media">
-            <div
-              class="col-xs-12 col-sm-12 col-md-12 col-lg-12 conForm text-center"
-            >
-              <div id="message"></div>
-              <form
-                method="post"
-                action="php/contact.php"
-                name="cform"
-                id="cform"
-              >
-                <input
-                  name="name"
-                  id="name"
-                  type="text"
-                  class="col-xs-12 col-sm-12 col-md-8 col-lg-8"
-                  placeholder="Your name"
-                />
-                <input
-                  name="email"
-                  id="email"
-                  type="email"
-                  class=" col-xs-12 col-sm-12 col-md-8 col-lg-8 noMarr"
-                  placeholder="Your email"
-                />
-                <textarea
-                  name="comments"
-                  id="comments"
-                  cols=""
-                  rows=""
-                  class="col-xs-12 col-sm-12 col-md-8 col-lg-8"
-                  placeholder="Your message"
-                ></textarea>
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                  <input
-                    type="submit"
-                    id="submit"
-                    name="send"
-                    class="submitBnt"
-                    value="Send message"
-                  />
-                </div>
-                <div id="simple-msg"></div>
-              </form>
-            </div>
-          </div>
-          <!--contact form end-->
-        </div>
-      </section>
-      <!--contact end-->
-
       <!--footer start-->
       <section class="footer" id="footer">
         <div class="container">
+            <div class="heading">
+                <h2>Let's Connect!</h2>
+                <h3>Looking Forward To Meeting you</h3>
+              </div>
+              <div class="footer-distributed">
+                  <div class="footer-center">
+              <div class="row text-center">
+                  <div class="col-md-4 col-sm-12">
+                    <div>
+                      <i class="fa fa-map-marker"></i>
+                      <p><span>722 South Bixel St</span> Los Angeles, California</p>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-sm-12">
+                    <div>
+                      <i class="fa fa-phone"></i>
+                      <p><a href="tel:+1-909-645-4189">+1-909-645-4189</a></p>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-sm-12">
+                    <div>
+                      <i class="fa fa-envelope"></i>
+                      <p><a href="mailto:melgabal@eng.ucsd.edu">melgabal@eng.ucsd.edu</a></p>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+                  </div>
+              </div>
+          <div class="row text-center">
+          <div class="col-md-12 col-sm-12 align-items-center">  
           <ul>
             <li>
               <a href="https://www.instagram.com/gabaly/?hl=en" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
@@ -659,6 +641,7 @@
             </li>
           </ul>
         </div>
+              </div>
         <p class="text-center">
           <a href="#wrapper" class="gototop"
             ><i class="fa fa-chevron-up fa-2"></i
@@ -697,7 +680,7 @@
               3: "experience",
               4: "education",
               5: "ourwork",
-              6: "contact"
+              6: "footer"
             },
             itemClass: "menuItem",
             itemHover: "active",
@@ -727,9 +710,7 @@
 
     <!--contact form js-->
     <script type="text/javascript" src="js/jquery.contact.js"></script>
-    <!-- <script src="js/jquery.easing.js"></script> 
-<script src="js/jquery.mousewheel.js"></script> 
-<script defer src="js/slideroption.js"></script>  -->
+
 
     <!--for theme custom jquery-->
     <script src="js/custom.js"></script>
